@@ -1,18 +1,10 @@
-if (cursors.left.isDown)
-    {
-    	//player will move to left
-        player.body.velocity.x = -150;
-        player.animations.play("left");
+    //animation
+    if((game.input.keyboard.justPressed(Phaser.Keyboard.UP) || game.input.keyboard.justPressed(Phaser.Keyboard.W)) && playerTweenCompleted) {
+        this.player.animations.play("walkUp");
+    } else if ((game.input.keyboard.justPressed(Phaser.Keyboard.DOWN) || game.input.keyboard.justPressed(Phaser.Keyboard.S)) && playerTweenCompleted) {
+        this.player.animations.play("walkDown");
+    } else if ((game.input.keyboard.justPressed(Phaser.Keyboard.LEFT) || game.input.keyboard.justPressed(Phaser.Keyboard.A)) && playerTweenCompleted) {
+        this.player.animations.play("walkLeft");
+    } else if ((game.input.keyboard.justPressed(Phaser.Keyboard.RIGHT) || game.input.keyboard.justPressed(Phaser.Keyboard.D)) && playerTweenCompleted) {
+        this.player.animations.play("walkRight");
     }
-    else if (cursors.right.isDown)
-    	{
-   			//player will move to right
-        	player.body.velocity.x = 150;
-        	player.animations.play("right");
-    	}
-    	else
-    	{
-        	//not moving at all
-         	player.animations.stop();
-        	player.frame = 4;
-    	}
