@@ -1,2 +1,4 @@
-Something more
-Something even more!
+How do they resolve pull requests? Can you get a sense of how contributions are evaluated in this community? How is the community organized? How is the repository/project organized?
+
+
+I am looking into the https://github.com/photonstorm/phaser. The pull request is usually resolved by leaving some comment to the host of the repository. The host will then decide whether merge the commit into master branch. The contribution can be seen in the insights tag -> contributors in multiple graphs. The community is organized with Checklist under insights tag -> community; people will need to follow the guidelines that are stated in the files of the checklist. The file is organized with multiple folders separating different part of the whole project. 
